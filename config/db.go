@@ -7,7 +7,7 @@ import (
 )
 
 func GetDB() (*sql.DB, error) {
-	connStr := "root:@tcp(localhost:3306)/basic"
+	connStr := "root:root@tcp(localhost:3306)/basic"
 	db, err := sql.Open("mysql", connStr)
 	return db, err
 }
